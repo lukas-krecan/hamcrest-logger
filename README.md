@@ -1,10 +1,12 @@
 Hamcrest logger
 ===============
 
-Do you wonder why your Hamcrest-based test is failing? Do you fight with a matcher extension that does not log well?
-Fight no more. Hamcrest logger is here to help you.
+[Hamcrest](https://github.com/hamcrest/JavaHamcrest) does a really great job when it comes to error logging. But sometimes you get to situations, where Hamcrest 
+matchers are used in other contexts, and the error messages are not so good. If you are in such situation, 
+Hamcrest logger is here for you. It's basically just a wrapper around other matchers which logs values to be 
+compared. And that's it, just one class that logs parameters.
 
-Just add log matcher and it will log all you need
+To use it, here is what you need to do.
 
     import static net.javacrumbs.hamcrest.logger.HamcrestLoggerMatcher.log;
 
